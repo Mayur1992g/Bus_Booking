@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+   <head>
+      <!-- Created by Artisteer v4.1.0.59861 -->
+      <meta charset="utf-8">
+      <title>Main</title>
+      <script language="javascript">
+         function validate()
+         { 
+           var ufrom,uto,udate;
+           ufrom=document.getElementById("FROM").value;
+           uto=document.getElementById("TO").value;
+           udate=document.getElementById("DATE").value;
+           if(udate=="")
+           {
+               document.getElementById("DATE").focus();
+               alert("Date can't be black");
+               
+               return false;
+           }
+           if(ufrom=="0")
+           {
+               document.getElementById("FROM").focus();
+               alert("From can't be black");
+               
+               return false;
+           }
+             
+            if(uto=="0")
+           {
+               alert("To can't be black");
+               document.getElementById("TO").focus();
+               return false;
+           }
+            if(ufrom==uto)
+           {
+               alert("Plz select diffrent from & to");
+               document.getElementById("TO").focus();
+               return false;
+           }
+               
+         return true;
+         }   
+      </script> 
+      <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+      <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+      
+      <script>jQuery(function($) {
+         'use strict';
+         if ($.fn.slider) {
+             $(".art-slidecontainershutterstock_2135213").each(function () {
+                 var slideContainer = $(this), tmp;
+                 var inner = $(".art-slider-inner", slideContainer);
+                 var helper = null;
+         
+                 if ($.support.transition) {
+                     helper = new BackgroundHelper();
+                     helper.init("fade", "next", $(".art-slide-item", inner).first().css($.support.transition.prefix + "transition-duration"));
+                     inner.children().each(function () {
+                         helper.processSlide($(this));
+                     });
+         
+                 }
+         
+         
+                 inner.children().eq(0).addClass("active");
+                 slideContainer.slider({
+                     pause: 1600,
+                     speed: 600,
+                     repeat: true,
+                     animation: "fade",
+                     direction: "next",
+                     navigator: slideContainer.siblings(".art-slidenavigatorshutterstock_2135213"),
+                     helper: helper                
+                 });
+             });
+         }
+         });
+      </script>
+      <style>.art-content .art-postcontent-0 .layout-item-0 { padding-right: 10px;padding-left: 10px;  }
+         .ie7 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+         .ie6 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+         .art-slidecontainershutterstock_2135213 {
+         position: relative;
+         width: 380px;
+         height: 253px;
+         }
+         .art-slidecontainershutterstock_2135213 .art-slide-item {
+         -webkit-transition: 600ms ease-in-out opacity;
+         -moz-transition: 600ms ease-in-out opacity;
+         -ms-transition: 600ms ease-in-out opacity;
+         -o-transition: 600ms ease-in-out opacity;
+         transition: 600ms ease-in-out opacity;
+         position: absolute;
+         display: none;
+         left: 0;
+         top: 0;
+         opacity: 0;
+         width:  100%;
+         height: 100%;
+         }
+         .art-slidecontainershutterstock_2135213 .active, .art-slidecontainershutterstock_2135213 .next, .art-slidecontainershutterstock_2135213 .prev {
+         display: block;
+         }
+         .art-slidecontainershutterstock_2135213 .active {
+         opacity: 1;
+         }
+         .art-slidecontainershutterstock_2135213 .next, .art-slidecontainershutterstock_2135213 .prev {
+         width: 100%;
+         }
+         .art-slidecontainershutterstock_2135213 .next.forward, .art-slidecontainershutterstock_2135213 .prev.back {
+         opacity: 1;
+         }
+         .art-slidecontainershutterstock_2135213 .active.forward {
+         opacity: 0;
+         }
+         .art-slidecontainershutterstock_2135213 .active.back {
+         opacity: 0;
+         }
+         .art-slideshutterstock_21352130 {
+         background-image:  url('../../../../../../../../../../../assets/images/slideshutterstock_21352130.png');
+         background-size:  100%;
+         background-position:  0 0;
+         background-repeat: no-repeat;
+         }
+         .art-slideshutterstock_21352131 {
+         background-image:  url('images/slideshutterstock_21352131.png');
+         background-size:  100%;
+         background-position:  0 0;
+         background-repeat: no-repeat;
+         }
+         .art-slideshutterstock_21352132 {
+         background-image:  url('images/slideshutterstock_21352132.png');
+         background-size:  100%;
+         background-position:  0 0;
+         background-repeat: no-repeat;
+         }
+         .art-slideshutterstock_21352133 {
+         background-image:  url('images/slideshutterstock_21352133.png');
+         background-size:  100%;
+         background-position:  0 0;
+         background-repeat: no-repeat;
+         }
+         .art-slideshutterstock_21352134 {
+         background-image:  url('../../../../../../../../images/slideshutterstock_21352134.png');
+         background-size:  100%;
+         background-position:  0 0;
+         background-repeat: no-repeat;
+         }
+         .art-slideshutterstock_21352135 {
+         background-image:  url('images/slideshutterstock_21352135.png');
+         background-size:  100%;
+         background-position:  0 0;
+         background-repeat: no-repeat;
+         }
+         .art-slideshutterstock_21352136 {
+         background-image:  url('images/slideshutterstock_21352136.png');
+         background-size:  100%;
+         background-position:  0 0;
+         background-repeat: no-repeat;
+         }
+         .art-slideshutterstock_21352137 {
+         background-image:  url('images/slideshutterstock_21352137.png');
+         background-size:  100%;
+         background-position:  0 0;
+         background-repeat: no-repeat;
+         }
+         .art-slidenavigatorshutterstock_2135213 {
+         display: inline-block;
+         position: absolute;
+         direction: ltr !important;
+         top: 229px;
+         left: 56.84%;
+         z-index: 101;
+         line-height: 0 !important;
+         -webkit-background-origin: border !important;
+         -moz-background-origin: border !important;
+         background-origin: border-box !important;
+         -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         box-sizing: border-box;
+         text-align: center;
+         white-space: nowrap;
+         }
+         .art-slidenavigatorshutterstock_2135213
+         {
+         background: #9C9C9C;background: linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;background: -webkit-linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;background: -moz-linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;background: -o-linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;background: -ms-linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;background: linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;-svg-background: linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;
+         -webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;
+         padding:7px;
+         }
+         .art-slidenavigatorshutterstock_2135213 > a
+         {
+         background: #575757;background: #575757;background: #575757;background: #575757;background: #575757;background: #575757;background: #575757;-svg-background: #575757;
+         -webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+         margin:0 10px 0 0;
+         width: 10px;
+         height: 10px;
+         }
+         .art-slidenavigatorshutterstock_2135213 > a.active
+         {
+         background: #FDDB7C;background: #FDDB7C;background: #FDDB7C;background: #FDDB7C;background: #FDDB7C;background: #FDDB7C;background: #FDDB7C;-svg-background: #FDDB7C;
+         -webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+         margin:0 10px 0 0;
+         width: 10px;
+         height: 10px;
+         }
+         .art-slidenavigatorshutterstock_2135213 > a:hover
+         {
+         background: #AB7E03;background: #AB7E03;background: #AB7E03;background: #AB7E03;background: #AB7E03;background: #AB7E03;background: #AB7E03;-svg-background: #AB7E03;
+         -webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+         margin:0 10px 0 0;
+         width: 10px;
+         height: 10px;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="art-main">
+         <div class="art-sheet clearfix">
+            <header class="art-header">
+               <div class="art-shapes">
+               </div>
+               <h1 class="art-headline" data-left="48.12%">
+                  <a href="#">ONLINE BUS RESERVATION SYSTEM</a>
+               </h1>
+            </header>
+            <nav class="art-nav">
+               <ul class="art-hmenu">
+                  <li><a href="index.html" class="active">Home</a></li>
+                  <li><a href="bus-hire.html">Bus Hire</a></li>
+                  <li><a href="cancellation.html">Cancellation</a></li>
+                  <li><a href="feedback.html">Feedback</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                  <li><a href="about-us.html">About  us</a></li>
+               </ul>
+            </nav>
+            <div class="art-layout-wrapper">
+               <div class="art-content-layout">
+                  <div class="art-content-layout-row">
+                     <div class="art-layout-cell art-content">
+                        <article class="art-post art-article">
+                           <div class="art-postcontent art-postcontent-0 clearfix">
+                              <div class="art-content-layout">
+                                 <div class="art-content-layout-row">
+                                    <div class="art-layout-cell layout-item-0" style="width: 100%" >
+                                       <p><br></p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="art-content-layout">
+                                 <div class="art-content-layout-row">
+                                    <div class="art-layout-cell layout-item-0" style="width: 52%" >
+                                       <div id="shutterstock_2135213" style="position: relative; display: inline-block; z-index: 0; margin: 0px;  border-width: 0px;  " class="art-collage">
+                                          <div class="art-slider art-slidecontainershutterstock_2135213" data-width="380" data-height="253">
+                                             <div class="art-slider-inner">
+                                                <div class="art-slide-item art-slideshutterstock_21352130">
+                                                </div>
+                                                <div class="art-slide-item art-slideshutterstock_21352131">
+                                                </div>
+                                                <div class="art-slide-item art-slideshutterstock_21352132">
+                                                </div>
+                                                <div class="art-slide-item art-slideshutterstock_21352133">
+                                                </div>
+                                                <div class="art-slide-item art-slideshutterstock_21352134">
+                                                </div>
+                                                <div class="art-slide-item art-slideshutterstock_21352135">
+                                                </div>
+                                                <div class="art-slide-item art-slideshutterstock_21352136">
+                                                </div>
+                                                <div class="art-slide-item art-slideshutterstock_21352137">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="art-slidenavigator art-slidenavigatorshutterstock_2135213" data-left="56.84">
+                                             <a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="art-layout-cell layout-item-0" style="width: 48%" >
+                                       <p><span style="font-weight: bold; font-family: Georgia; font-size: 16px;">Sear</span><span style="font-weight: bold; font-family: Georgia; font-size: 16px;">ch &amp; Book</span></p>
+                                       <p><span style="font-weight: bold;">Date:- &nbsp;&nbsp;<input type="date" style="width: 48%" id="DATE"></span></p>
+                                       <p>
+                                          <span style="font-weight: bold;">
+                                             From:- &nbsp;
+                                             <select name="from" id="FROM" style="width: 48%">
+                                                <option selected="selected" value="0">- Select -</option>
+                                                <option value="1">Ahmedabad</option>
+                                                <option value="1373">Bhopal</option>
+                                                <option value="2245">Indore</option>
+                                                <option value="3665">Jabalpur</option>
+                                                <option value="983">Jaipur</option>
+                                                <option value="1045">Kota</option>
+                                                <option value="1413">Mandsaur</option>
+                                                <option value="2451">Neemuch</option>
+                                                <option value="1433">Ratlam</option>
+                                                <option value="1435">Rewa</option>
+                                                <option value="1437">Sagar</option>
+                                                <option value="1041">Udaipur</option>
+                                                <option value="1454">Ujjain</option>
+                                             </select>
+                                          </span>
+                                       </p>
+                                       <p>
+                                          <span style="font-weight: bold;">
+                                             To:- &nbsp; &nbsp; &nbsp;&nbsp;
+                                             <select name="To" id="TO" style="width: 48%">
+                                                <option selected="selected" value="0">- Select -</option>
+                                                <option value="1">Ahmedabad</option>
+                                                <option value="1373">Bhopal</option>
+                                                <option value="2245">Indore</option>
+                                                <option value="3665">Jabalpur</option>
+                                                <option value="983">Jaipur</option>
+                                                <option value="1045">Kota</option>
+                                                <option value="1413">Mandsaur</option>
+                                                <option value="2451">Neemuch</option>
+                                                <option value="1433">Ratlam</option>
+                                                <option value="1435">Rewa</option>
+                                                <option value="1437">Sagar</option>
+                                                <option value="1041">Udaipur</option>
+                                                <option value="1454">Ujjain</option>
+                                             </select>
+                                          </span>
+                                       </p>
+                                       <p><span style="font-weight: bold;">Bus Type:- &nbsp;&nbsp;<label class="art-radiobutton"><input type="radio" name="r1" checked>AC Bus &nbsp;<label class="art-radiobutton"><input type="radio" name="r1">Non AC Bus&nbsp;<label class="art-checkbox"><input type="checkbox">Sleeper</label></label></label></span></p>
+                                       <p>&nbsp;<input type="submit" value="Search" title="Click for Bus" class="art-button" onclick="return validate();"> &nbsp;<span style="font-weight: bold;"><br></span></p>
+                                       <p>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </article>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <footer class="art-footer">
+               <p>
+                  <span style="font-family: Impact; font-style: italic; font-size: 48px;">
+                     <marquee behavior="scroll" bgcolor="black" direction="left" onmouseout="this.start();" onmouseover="this.stop();">Welcome to bus reservation system</marquee>
+                  </span>
+               </p>
+            </footer>
+         </div>
+      </div>
+   </body>
+</html>
